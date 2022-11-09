@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/signin.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <div id="main">
+        <div id="content">
+
+            <img  src="https://www.jiomart.com/msassets/images/login-banner.jpg" alt="SignIn Poster Image">
+
+            <div id="sign_mbl">
+                
+            <h2>Sign in</h2>
+            <p id="p" >Sign in to access your Orders, Offers and Wishlist.</p>
+
+            <div id="input">
+                <div id="num"> +91 &#124; </div>
+                <input type="text" id="mbl" placeholder="Enter your mobile no">
+            </div>
+
+            <!-- This below div used for giving alert  -->
+            <div id="err">
+                <p>Please enter your Mobile Number!</p>
+            </div>
+
+            <button id="mblBtn" onclick="enter()"> &#62; </button>
+
+        </div>
+
+        <!-- Next sign up page  -->
+
+        <div id="signup">
+            <h2>Sign Up</h2>
+
+            <div id="slide_left">
+            <p id="p" >Please enter your details</p>
+                <input type="text" class="gap" id="firstName" placeholder="Your First Name">
+                <input type="text" class="gap" id="lastName" placeholder="Your Last Name">
+                <input type="email" class="gap" id="email" placeholder="Enter your Email Id">
+                <input type="password" class="gap" id="pass" placeholder="Enter your Password">
+                <p style="font-size: small;">Use 8 more characters with a mix of letter & numbers</p>
+                <input type="password" class="gap" id="Cpass" placeholder="Enter your Password">
+
+                <div id="checkBox">
+                    <img id="wp" src="https://img.icons8.com/external-justicon-flat-justicon/64/null/external-whatsapp-social-media-justicon-flat-justicon.png" alt=""> <p>Enable order updates and important information on Whatsapp</p><input type="checkbox">
+                    
+                </div>
+
+            <h2>Verify</h2>
+            <div id="mbl_no_msg">
+                <p id="mbl_msg"></p> <div> <p id="change_no">Change</p> </div>
+            </div>
+
+            <input type="text" id="OTP" placeholder="Enter your OTP">
+           
+            <p id="resend">Resend OTP</p>
+            
+
+        </div>
+        <button id="verify" onclick="verify(event)">Verify</button>
+
+
+        </div>
+
+        </div>
+
+        <p id="center">By continuing you agree to our <a href=""> Term of service</a> and  <a href=""> Privacy & Legal Policy.</a></p>
+
+    </div>
+
+    <footer id="footer"></footer>
+
+</body>
+<script src="./src/signin.js"></script>
+</html>
