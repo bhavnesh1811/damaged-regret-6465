@@ -44,13 +44,13 @@ let verify = () => {
   let password = document.getElementById("pass").value;
   let confirm_password = document.getElementById("Cpass").value;
   let mOtp = document.getElementById("OTP").value;
-//   if (mOtp == "") {
-//     alert("Please fill the OTP");
-//   } else if (mOtp !== otp) {
-//     alert("otp didn't match");
-//   } else if (mOtp === otp) {
-//     alert("Verifiction Successfully!")
-// }
+  if (mOtp == "") {
+    alert("Please fill the OTP");
+  } else if (mOtp !== otp) {
+    alert("otp didn't match");
+  } else if (mOtp === otp) {
+    alert("Verifiction Successfully!")
+}
 
 
   let data = new userDetails(
