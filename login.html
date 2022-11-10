@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+        <div id="main">
+
+            <img  src="https://www.jiomart.com/msassets/images/login-banner.jpg" alt="SignIn Poster Image">
+
+            <div id="sign_mbl">
+                
+            <h2>Sign in</h2>
+            <p id="p" >Sign in to access your Orders, Offers and Wishlist.</p>
+
+            <div id="input">
+                <div id="num"> +91 &#124; </div>
+                <input type="text" id="mbl" placeholder="Enter your mobile no">
+                 <a href="signup.html" id="change_no">Change</a> 
+            </div>
+           
+            <div id="err">
+                <p>Please enter your Mobile Number!</p>
+            </div>
+
+            <input type="text" id="OTP" placeholder="Enter your OTP">
+
+            <div id="otpAlrt">
+                <div id="otpAlt">Waiting For OTP...</div>
+                <p id="resend">Resend OTP</p>
+            </div>
+           
+            <!-- <p id="resend">Resend OTP</p> -->
+
+            <button id="verify" onclick="verify(event)">Verify</button>
+
+        </div>
+
+        </div>
+
+    <footer id="footer"></footer>
+
+</body>
+<script src="./scripts/login.js"></script>
+</html>
