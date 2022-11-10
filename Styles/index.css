@@ -28,74 +28,65 @@ body {
     margin-top: 20px;
     width: 100%;
 }
-
-#categories_carousel {
-    scroll-snap-type: x mandatory;
-    overflow-x: scroll;
-    margin-bottom: 50px;
-}
-
 .headings1169 {
     margin-left: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 0.2px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+
+#categories_carousel {
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
     margin-bottom: 30px;
-    margin-top: 30px;
 }
 
 #categories_carousel>.categories_carousel_images {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 #categories_carousel>.categories_carousel_images img {
     margin-inline: 1%;
-    height: 400px;
+    height: 200px;
 }
 
 #top_deals1169 {
     scroll-snap-type: x mandatory;
     overflow-x: scroll;
-    margin-bottom: 50px;
     display: flex;
-    font-size: 1.25rem;
     text-align: center;
 }
 
 #top_deals1169>.deals1169 {
-    margin-inline: 2%;
+    margin-inline: 1.5%;
     border: 1px solid grey;
 }
 
-button>.flickity-button-icon{
-    /* background-color: blue; */
-    color: blue;
+#top_deals1169>.deals1169 img{
+    height: 150px;
 }
 
-#top_deals1169>.deals1169 img {
-    height: 225px;
+#top_deals1169>.deals1169 h4{
+    margin-top:0px;
+    height: 40px;
 }
 
-#top_deals1169>.deals1169 h4 {
-    height: 50px;
-}
-
-#top_deals1169>.deals1169 p {
+#top_deals1169>.deals1169 p{
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 5px;
-
 }
 
-#top_deals1169>.deals1169 button {
+#top_deals1169>.deals1169 button{
     width: 80%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 10px;
-    font-size: 1.25rem;
+    font-size: 1rem;
     background-color: blue;
     color: white;
     border-radius: 20px;
+    margin-bottom: 5px;
 }
 
 #top_deals1169>.deals1169 button:hover {
@@ -106,41 +97,38 @@ button>.flickity-button-icon{
 #mobile_1169 {
     scroll-snap-type: x mandatory;
     overflow-x: scroll;
-    margin-bottom: 50px;
     display: flex;
-    font-size: 1.25rem;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 #mobile_1169>.mobiles1169 {
-    margin-inline: 2%;
+    margin-inline: 1.5%;
     border: 1px solid grey;
 }
 
-#mobile_1169>.mobiles1169 img {
-    height: 225px;
+#mobile_1169>.mobiles1169 img{
+    height: 150px;
 }
 
-#mobile_1169>.mobiles1169 h4 {
-    height: 50px;
+#mobile_1169>.mobiles1169 h4{
+    margin-top:0px;
+    height: 40px;
 }
 
-#mobile_1169>.mobiles1169 p {
+#mobile_1169>.mobiles1169 p{
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 5px;
-
 }
 
-#mobile_1169>.mobiles1169 button {
+#mobile_1169>.mobiles1169 button{
     width: 80%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 10px;
-    font-size: 1.25rem;
+    font-size: 1rem;
     background-color: blue;
     color: white;
     border-radius: 20px;
+    margin-bottom: 5px;
 }
 
 #mobile_1169>.mobiles1169 button:hover {
@@ -150,88 +138,80 @@ button>.flickity-button-icon{
 
 .banners_1169 {
     display: inline-block;
-    width: 48%;
-    margin: 15px;
+    width: 47%;
+    margin: 18px;
 }
 
+button>.flickity-button-icon{
+    color: blue;
+}
 
 #bestSelling1169 {
     scroll-snap-type: x mandatory;
     overflow-x: scroll;
-    margin-bottom: 50px;
     display: flex;
-    font-size: 1.25rem;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 #bestSelling1169>.bestSeller1169 {
-    margin-inline: 2%;
+    margin-inline: 1.5%;
+    border: 1px solid grey;
 }
 
-#bestSelling1169>.bestSeller1169 img {
-    height: 225px;
+#bestSelling1169>.bestSeller1169 img{
+    height: 150px;
 }
 
-#bestSelling1169>.bestSeller1169 h4 {
-    height: 50px;
+#bestSelling1169>.bestSeller1169 h4{
+    margin-top:0px;
+    height: 40px;
 }
 
-#bestSelling1169>.bestSeller1169 p {
+#bestSelling1169>.bestSeller1169 p{
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 5px;
-}
-
-#bestSelling1169>.bestSeller1169 img:hover{
-    cursor: pointer;
-    transform: scale(1.05);
 }
 
 #foodGrain1169 {
     scroll-snap-type: x mandatory;
     overflow-x: scroll;
-    margin-bottom: 50px;
     display: flex;
-    font-size: 1.25rem;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 #foodGrain1169>.food_Grain1169 {
-    margin-inline: 2%;
+    margin-inline: 1.5%;
+    border: 1px solid grey;
 }
 
-#foodGrain1169>.food_Grain1169 img {
-    height: 225px;
+#foodGrain1169>.food_Grain1169 img{
+    height: 175px;
 }
 
-#foodGrain1169>.food_Grain1169 h4 {
-    height: 50px;
+#foodGrain1169>.food_Grain1169 h4{
+    margin-top:0px;
+    height: 40px;
 }
 
-#foodGrain1169>.food_Grain1169 p {
+#foodGrain1169>.food_Grain1169 p{
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-#foodGrain1169>.food_Grain1169 img:hover{
-    cursor: pointer;
-    transform: scale(1.05);
-}
-
-#foodGrain1169>.food_Grain1169 button {
+#foodGrain1169>.food_Grain1169 button{
     width: 80%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 10px;
-    font-size: 1.25rem;
+    font-size: 1rem;
     background-color: blue;
     color: white;
     border-radius: 20px;
+    margin-bottom: 5px;
 }
 
 #foodGrain1169>.food_Grain1169 button:hover {
     cursor: pointer;
     background-color: rgb(49, 175, 49);
 }
-
