@@ -108,7 +108,7 @@ h2{
 .gap{
     width:80%;
     height: 45px;
-    margin-top: 25px;
+    margin-top: 35px;
     outline: none;
 }
 
@@ -173,4 +173,26 @@ h2{
     border: 0px;
     font-size: medium;
 }
+
+#alrt{
+    border: 1px solid red;
+    width: 80%;
+    height: 20px;
+    font-size: medium;
+    color: red;
+    font-style: italic;
+    /* display: none; */
+}
+#otpAlrt{
+     /* border: 1px solid red;  */
+    width: 80%;
+    height: 20px;
+    font-size: medium;
+    color: red;
+    font-style: italic;
+    display: none;
+
+}
+
+
 

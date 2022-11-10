@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up Page</title>
     <link rel="stylesheet" href="./styles/signup.css">
 </head>
 <body>
@@ -42,29 +42,34 @@
             <div id="slide_left">
             <p id="p" >Please enter your details</p>
                 <input type="text" class="gap" id="firstName" placeholder="Your First Name">
+                <div id="alrt"></div>
                 <input type="text" class="gap" id="lastName" placeholder="Your Last Name">
+                <div id="alrt"></div>
                 <input type="email" class="gap" id="email" placeholder="Enter your Email Id">
+                <div id="alrt"></div>
                 <input type="password" class="gap" id="pass" placeholder="Enter your Password">
-                <p style="font-size: small;">Use 8 more characters with a mix of letter & numbers</p>
+                <div id="alrt"></div>
+                <p style="font-size: x-small;font-weight:600; color: rgb(108, 104, 104);">Use 8 more characters with a mix of letter & numbers</p>
                 <input type="password" class="gap" id="Cpass" placeholder="Enter your Password">
+                <div id="alrt"></div>
 
                 <div id="checkBox">
                     <img id="wp" src="https://img.icons8.com/external-justicon-flat-justicon/64/null/external-whatsapp-social-media-justicon-flat-justicon.png" alt=""> <p>Enable order updates and important information on Whatsapp</p><input type="checkbox">
                     
                 </div>
-
             <h2>Verify</h2>
             <div id="mbl_no_msg">
                 <p id="mbl_msg"></p> <div> <p id="change_no">Change</p> </div>
             </div>
 
             <input type="text" id="OTP" placeholder="Enter your OTP">
+            <div id="otpAlrt"></div>
            
             <p id="resend">Resend OTP</p>
             
 
         </div>
-        <button id="verify" onclick="verify(event)">Verify</button>
+        <button id="verify" onclick="verify()">Verify</button>
 
 
         </div>
