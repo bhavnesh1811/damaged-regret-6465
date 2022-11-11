@@ -30,7 +30,8 @@ let verifyUser = document
       if (mobile_no !== el.mbl && mobile_no !== "") {
         giveErr.style.visibility = "visible";
         giveErr.innerText = "Unauthorised User***";
-      } else if (userOTP !== el.OTP && userOTP !== "") {
+      }
+       else if (userOTP !== el.OTP && userOTP !== "") {
         otpAlert.style.visibility = "visible";
         otpAlert.style.color = "red";
         otpAlert.innerText = "Wrong OTP**";
