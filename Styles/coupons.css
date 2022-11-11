@@ -1,0 +1,51 @@
+
+#section1 {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-image: url("https://document-export.canva.com/w4shM/DAFRV3w4shM/9/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20221111%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221111T055256Z&X-Amz-Expires=12968&X-Amz-Signature=ee584ce0cc1e50d6599e76fd05fcb4d04c56aa569014390f99f1770058433a24&X-Amz-SignedHeaders=host&response-expires=Fri%2C%2011%20Nov%202022%2009%3A29%3A04%20GMT");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #voucherTab {
+    width: 90%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f3f3f3;
+  }
+
+  #voucherCards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    /* border:2px solid green; */
+    text-align: center;
+  }
+
+  #voucherCards img{
+    width:100%;
+    height:300px;
+  }
+
+  #voucherCards>div{
+    /* border:1px solid red; */
+    display: grid;
+    width:100%;
+  }
+
+  #voucherCards button{
+    padding:20px;
+  }
+  
+  
+  
+  #username {
+    cursor: pointer;
+  }
+  
+  #username1 {
+    cursor: pointer;
+  }
