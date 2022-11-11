@@ -9,16 +9,18 @@ function navbar() {
     <ul class="listMenu">
         <li>
             <input type="text" placeholder="Search essentials , groceries, and more ..." /><i
-                style="margin-left: -32px; color: grey" class="fas fa-align-justify"></i>
+                style="margin-left: -32px; color: grey;" class="fas fa-align-justify"></i>
         </li>
 
         <li style="color: white">
-            <a id="userName" href="./login.html" style="font-size: 18px; color: white; text-decoration: none"><i
-                    class="fa fa-user"></i>&nbsp;&nbsp;Sign In</a>
-        </li>
-        <li style="color: white">
             <a id="userName" href="./signup.html" style="font-size: 18px; color: white; text-decoration: none"><i
-                    class="fa fa-user"></i>&nbsp;&nbsp;Sign Up</a>
+                    class="fa fa-user"></i>&nbsp;&nbsp;Sign In/Sign Up</a>
+                    
+        </li>
+       
+        <li style="color: white">
+            <a id="userName" href="./userpage.html" style="font-size: 18px; color: white; text-decoration: none"><i
+                    class="fa fa-user"></i>&nbsp;&nbsp;Account Details</a>
         </li>
         <li style="color: white">
         <a id="userName" href="./adminLogin.html" style="font-size: 18px; color: white; text-decoration: none"><i

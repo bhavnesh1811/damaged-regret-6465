@@ -1,8 +1,11 @@
-// import {Navbar} from "../components/navbar.js"
-// document.getElementById("navbar").innerHTML = Navbar();
+import navbar from "../script/navbar.js";
+console.log(navbar);
+let navbar_div=document.getElementById("navbar");
+navbar_div.innerHTML=navbar();
 
-// import {Footer} from "../components/footer.js"
-// document.getElementById("footer").innerHTML = Footer();
+import footer from '../script/footer.js';
+    let footer_div=document.getElementById("footer");
+    footer_div.innerHTML=footer();
 
 let UserData = JSON.parse(localStorage.getItem("userData")) || [];
 // console.log(UserData);
@@ -30,15 +33,16 @@ let verifyUser = document
       if (mobile_no !== el.mbl && mobile_no !== "") {
         giveErr.style.visibility = "visible";
         giveErr.innerText = "Unauthorised User***";
-      } else if (userOTP !== el.OTP && userOTP !== "") {
+      }
+       else if (userOTP !== el.OTP && userOTP !== "") {
         otpAlert.style.visibility = "visible";
         otpAlert.style.color = "red";
         otpAlert.innerText = "Wrong OTP**";
       } else if (mobile_no == el.mbl && userOTP == el.OTP && userOTP == otp) {
         localStorage.setItem("user", JSON.stringify(el));
         alert("Login In Successfully!");
-        // window.location.href = "index.html";
-        window.location.href = "userpage.html";
+        window.location.href = "index.html";
+        // window.location.href = "userpage.html";
       }
 
     });
