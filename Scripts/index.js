@@ -1,6 +1,6 @@
 
-    import navbar from "../script/navbar.js";
-    import footer from '../script/footer.js';
+    import navbar from "../Components/navbar.js";
+    import footer from '../Components/footer.js';
     //console.log('footer:', footer);
     let footer_div=document.getElementById("footer");
     footer_div.innerHTML=footer()
