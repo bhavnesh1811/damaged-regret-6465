@@ -1,8 +1,10 @@
-// import {Navbar} from "../components/navbar.js"
-// document.getElementById("navbar").innerHTML = Navbar();
+import navbar from "../script/navbar.js";
+let navbar_div=document.getElementById("navbar");
+navbar_div.innerHTML=navbar();
 
-// import {Footer} from "../components/footer.js"
-// document.getElementById("footer").innerHTML = Footer();
+import footer from '../script/footer.js';
+    let footer_div=document.getElementById("footer");
+    footer_div.innerHTML=footer();
 
 let UserDetails = JSON.parse(localStorage.getItem("userData")) || [];
 // console.log(UserDetails);
@@ -45,3 +47,8 @@ let editDetails = document.getElementById("edit").addEventListener("click", () =
   console.log("123");
   window.location.href = "signup.html";
 });
+
+let logout = document.getElementById("logout").addEventListener("click", () => {
+  window.location.href = "index.html"
+  alert("Logout Successfully");
+})

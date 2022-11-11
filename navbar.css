@@ -30,6 +30,8 @@ body {
   top: 10px;
   align-items: center;
   justify-content: space-between;
+  margin-inline: 35px;
+  /* border: 2px solid red; */
 }
 .listMenu li {
   padding-left: 40px;
@@ -55,6 +57,7 @@ li button {
   font-size: 18px;
   color: #fff;
 }
+
 /* .header h3 {
   font-weight: bolder;
   font-size: 23px;
@@ -216,9 +219,14 @@ input[type="checkbox"] {
 }
 #mainnav {
   padding-bottom: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   margin-top:0px;
 }
+#mainnav ul{
+margin: 20px 0px 0px 0px;
+padding: 0px 0px 15px 0px;
+}
+
 #mainnav ul.submenu {
   position: absolute;
   left: 10px;
@@ -237,24 +245,27 @@ input[type="checkbox"] {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+
 }
 
 #mainnav ul.submenu li:first-child {
   border-top: none;
+  /* border: 5px solid red; */
 }
 .submenu li {
   width: 190px;
   padding-right: 0px;
 }
 
-.submenu > li > a {
+.submenu > li  a {
   display: block;
+  margin: 0px 0px 0px -10px;
   width: 450px;
   color: #333;
   text-decoration: none;
   padding: 0 0 0 1px;
   line-height: 45px;
-  margin-left: -60px;
+  /* margin-left: -60px; */
   border-radius: 5px;
 }
 .submenu li a:hover {

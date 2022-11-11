@@ -1,8 +1,11 @@
-// import {Navbar} from "../components/navbar.js"
-// document.getElementById("navbar").innerHTML = Navbar();
+import navbar from "../script/navbar.js";
+console.log(navbar);
+let navbar_div=document.getElementById("navbar");
+navbar_div.innerHTML=navbar();
 
-// import {Footer} from "../components/footer.js"
-// document.getElementById("footer").innerHTML = Footer();
+import footer from '../script/footer.js';
+    let footer_div=document.getElementById("footer");
+    footer_div.innerHTML=footer();
 
 
 let UserData_arr = JSON.parse(localStorage.getItem("userData")) || [];
@@ -59,12 +62,9 @@ let addUser = document.getElementById("verify").addEventListener("click", () => 
   let confirm_password = document.getElementById("Cpass").value;
   let mOtp = document.getElementById("OTP").value;
   let mobile_num = document.getElementById("mbl").value;
-  // let giveAlert = document.querySelectorAll("#alrt");
   let opt_alert = document.getElementById("otpAlrt");
 
    if(firstName == "" || lastName == "" || email == "" || password == "" || confirm_password == ""){
-    // giveAlert.style.display = "block";
-    // giveAlert.innerText = "All Fields are Mandatory to Fill";
     alert("All Fields are Mandatory to Fill");
   }
   if(password.length<8 && password !=="" ){
@@ -96,7 +96,8 @@ let addUser = document.getElementById("verify").addEventListener("click", () => 
     
     UserData_arr.push(data);
     localStorage.setItem("userData", JSON.stringify(UserData_arr));
-      window.location.href = "login.html";
+    window.location.href = "index.html";
+      // window.location.href = "login.html";
      firstName = document.getElementById("firstName").value = null;
   lastName = document.getElementById("lastName").value = null;
   email = document.getElementById("email").value = null;
