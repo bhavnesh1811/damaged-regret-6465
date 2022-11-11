@@ -1,5 +1,9 @@
 
     import navbar from "../script/navbar.js";
+    import footer from '../script/footer.js';
+    //console.log('footer:', footer);
+    let footer_div=document.getElementById("footer");
+    footer_div.innerHTML=footer()
     //console.log('navbar:', navbar);
     let navbar_div=document.getElementById("navbar");
     navbar_div.innerHTML=navbar();
@@ -58,8 +62,6 @@ const slide = async () => {
 }
 slide();
 
-const carts = JSON.parse(localStorage.getItem("cart")) || [];
-let totalS = JSON.parse(localStorage.getItem("cart")) || [];
 const appendTop = async () => {
   let best_seller = document.querySelector('#top_deals1169');
   best_seller.innerHTML = null;
@@ -111,7 +113,7 @@ const appendTop = async () => {
           "Content-Type": "application/json"
         }
       });
-
+      dataCount();
     });
 
 
@@ -172,7 +174,7 @@ const mobiles1169 = async () => {
           "Content-Type": "application/json"
         }
       });
-      data();
+      dataCount();
     })
     div.append(prod_image, prod_title, prod_deal_price, prod_actual_price, savings, btn)
     best_mobile.append(div);
@@ -262,7 +264,7 @@ const foodGrains1169 = async() => {
           "Content-Type": "application/json"
         }
       });
-      data();
+      dataCount();
     })
 
     div.append(prod_image, prod_title, prod_deal_price, prod_actual_price, savings,btn)
@@ -271,7 +273,7 @@ const foodGrains1169 = async() => {
 }
 foodGrains1169();
 let cartcount=document.getElementById("counter");
-const data=async() =>{
+const dataCount=async() =>{
   let urlData = "https://better-buy-rh4i.onrender.com/cartData";
   let cartData=await fetch(urlData);
   
@@ -281,7 +283,7 @@ const data=async() =>{
   //appendTop(cartData);
   
 }
-data();
+dataCount();
 
 
 
