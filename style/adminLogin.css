@@ -1,0 +1,31 @@
+h1{
+    text-align: center;   
+    margin-top: 150px; 
+}
+#create_299{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 20%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 30px;
+}
+#create_299>input{
+    height: 25px;
+}
+#create_299>#submit{
+    height: 35px;
+    width: 70px;
+    margin: auto;
+    border-radius: 10px;
+    color: blue;
+    font-weight: 900;
+}
+#create_299>#submit:hover{
+    cursor: pointer;
+    height: 30px;
+    width: 60px;
+    color: white;
+    background-color: blue
+}

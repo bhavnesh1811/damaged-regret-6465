@@ -1,0 +1,218 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#slider1 .sliderone {
+    width: 100%;
+    margin-top:50px;
+    height:250px;
+}
+
+#banner1169 img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#banner1169_2 img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#slider1169_2 img {
+    width: 100%;
+    display: flex;
+}
+
+#banner1169_3 img {
+    margin-top: 20px;
+    width: 100%;
+}
+.headings1169 {
+    margin-left: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.2px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+
+#categories_carousel {
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    margin-bottom: 30px;
+}
+
+#categories_carousel>.categories_carousel_images {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#categories_carousel>.categories_carousel_images img {
+    margin-inline: 1.5%;
+    height: 200px;
+}
+
+#top_deals1169 {
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    display: flex;
+    text-align: center;
+}
+
+#top_deals1169>.deals1169 {
+    margin-inline: 1.5%;
+    border: 1px solid grey;
+}
+
+#top_deals1169>.deals1169 img{
+    height: 200px;
+}
+
+#top_deals1169>.deals1169 h4{
+    margin-top:0px;
+    height: 40px;
+}
+
+#top_deals1169>.deals1169 p{
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#top_deals1169>.deals1169 button{
+    width: 80%;
+    font-size: 1rem;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+#top_deals1169>.deals1169 button:hover {
+    cursor: pointer;
+    background-color: rgb(49, 175, 49);
+}
+
+#mobile_1169 {
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    display: flex;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#mobile_1169>.mobiles1169 {
+    margin-inline: 1.5%;
+    border: 1px solid grey;
+}
+
+#mobile_1169>.mobiles1169 img{
+    height: 200px;
+}
+
+#mobile_1169>.mobiles1169 h4{
+    margin-top:0px;
+    height: 40px;
+}
+
+#mobile_1169>.mobiles1169 p{
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#mobile_1169>.mobiles1169 button{
+    width: 80%;
+    font-size: 1rem;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+#mobile_1169>.mobiles1169 button:hover {
+    cursor: pointer;
+    background-color: rgb(49, 175, 49);
+}
+
+.banners_1169 {
+    display: inline-block;
+    width: 47%;
+    margin: 18px;
+}
+
+button>.flickity-button-icon{
+    color: blue;
+}
+
+#bestSelling1169 {
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    display: flex;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#bestSelling1169>.bestSeller1169 {
+    margin-inline: 1.5%;
+    border: 1px solid grey;
+}
+
+#bestSelling1169>.bestSeller1169 img{
+    height: 200px;
+}
+
+#bestSelling1169>.bestSeller1169 h4{
+    margin-top:0px;
+    height: 40px;
+}
+
+#bestSelling1169>.bestSeller1169 p{
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#foodGrain1169 {
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    display: flex;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#foodGrain1169>.food_Grain1169 {
+    margin-inline: 1.5%;
+    border: 1px solid grey;
+}
+
+#foodGrain1169>.food_Grain1169 img{
+    height: 175px;
+}
+
+#foodGrain1169>.food_Grain1169 h4{
+    margin-top:0px;
+    height: 40px;
+}
+
+#foodGrain1169>.food_Grain1169 p{
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#foodGrain1169>.food_Grain1169 button{
+    width: 80%;
+    font-size: 1rem;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+#foodGrain1169>.food_Grain1169 button:hover {
+    cursor: pointer;
+    background-color: rgb(49, 175, 49);
+}
