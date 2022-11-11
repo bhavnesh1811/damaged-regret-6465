@@ -1,9 +1,16 @@
-let UserData_arr = JSON.parse(localStorage.getItem("userData")) || [];
+// import {Navbar} from "../components/navbar.js"
+// document.getElementById("navbar").innerHTML = Navbar();
 
+// import {Footer} from "../components/footer.js"
+// document.getElementById("footer").innerHTML = Footer();
+
+
+let UserData_arr = JSON.parse(localStorage.getItem("userData")) || [];
 // let otp = Math.floor(Math.random() * 100000) + 111111;
 let otp = "123456";
 
-let enter = () => {
+let addMobileNo = document.getElementById("mblBtn").addEventListener("click", () => {
+
   let main_div = document.getElementById("sign_mbl");
   let signup_page = document.getElementById("signup");
   let give_alert = document.getElementById("err");
@@ -20,7 +27,10 @@ let enter = () => {
     main_div.style.display = "none";
     signup_page.style.display = "block";
   }
-};
+
+});
+
+// CF 
 
 function userDetails(
   firstName,
@@ -40,7 +50,8 @@ function userDetails(
   this.mbl = mobile_num;
 }
 
-let verify = () => {
+let addUser = document.getElementById("verify").addEventListener("click", () => {
+
   let firstName = document.getElementById("firstName").value;
   let lastName = document.getElementById("lastName").value;
   let email = document.getElementById("email").value;
@@ -66,12 +77,10 @@ let verify = () => {
   if (mOtp == "") {
     opt_alert.style.display = "block";
     opt_alert.innerText = "Please Fill the OTP";
-    // alert("Please Fill the OTP");
   }
   else if (otp !== mOtp && mOtp !== "") {
     opt_alert.style.display = "block";
     opt_alert.innerText = "OTP do not Match";
-    // alert("otp didn't match");
   } else if (otp === mOtp && confirm_password == password && firstName !== "" && lastName !== "" && email !== "" && password !== "" && confirm_password !== "") {
     alert("Verifiction Successfully!")
     let data = new userDetails(
@@ -97,17 +106,17 @@ let verify = () => {
   mobile_num = document.getElementById("mbl").value = null;
 }
 
+});
 
-};
 
-document.getElementById("change_no").addEventListener("click", () => {
+let changeNo = document.getElementById("change_no").addEventListener("click", () => {
   let main_div = document.getElementById("sign_mbl");
   let signup_page = document.getElementById("signup");
   main_div.style.display = "block";
   signup_page.style.display = "none";
 });
 
-document.getElementById("resend").addEventListener("click", () => {
+let resendOtp = document.getElementById("resend").addEventListener("click", () => {
   let give_alert = document.getElementById("err");
   let main_div = document.getElementById("sign_mbl");
   let signup_page = document.getElementById("signup");

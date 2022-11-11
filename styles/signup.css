@@ -175,7 +175,6 @@ h2{
 }
 
 #alrt{
-    border: 1px solid red;
     width: 80%;
     height: 20px;
     font-size: medium;
@@ -184,7 +183,6 @@ h2{
     /* display: none; */
 }
 #otpAlrt{
-     /* border: 1px solid red;  */
     width: 80%;
     height: 20px;
     font-size: medium;
