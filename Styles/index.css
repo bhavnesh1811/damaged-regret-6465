@@ -2,11 +2,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
-
 }
 
 #slider1 .sliderone {
     width: 100%;
+    margin-top:60px;
 }
 
 #banner1169 img {
@@ -49,7 +49,7 @@ body {
 }
 
 #categories_carousel>.categories_carousel_images img {
-    margin-inline: 1%;
+    margin-inline: 2%;
     height: 200px;
 }
 
@@ -108,7 +108,7 @@ body {
 }
 
 #mobile_1169>.mobiles1169 img{
-    height: 150px;
+    height: 200px;
 }
 
 #mobile_1169>.mobiles1169 h4{
