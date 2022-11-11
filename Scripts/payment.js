@@ -20,7 +20,8 @@ const paymentproceed=(e)=>{
     e.preventDefault();
     setTimeout(() => {
         alert("Your order is Placed Successfully, Thanks for Shopping!!") ;
-        // let data=localStorage.setItem("cart_total",0);
+        // localStorage.setItem("cart_total",0);
+        localStorage.setItem("total_count",0);
         window.location.href="index.html";
     }, 2000);
   

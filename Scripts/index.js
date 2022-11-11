@@ -272,6 +272,8 @@ const foodGrains1169 = async() => {
   });
 }
 foodGrains1169();
+
+
 let cartcount=document.getElementById("counter");
 const dataCount=async() =>{
   let urlData = "https://better-buy-rh4i.onrender.com/cartData";

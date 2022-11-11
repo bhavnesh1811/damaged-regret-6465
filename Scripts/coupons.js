@@ -27,11 +27,12 @@ document.querySelector("#btn1").addEventListener("click",()=>{
             // continue;
         }
         else{
-            total = Math.round(total * 0.7);
+            let disc = Math.round(total * 0.35);
+            let bal=total-disc;
             let coupon_applied = true;
             localStorage.setItem("coupon_applied",JSON.stringify(coupon_applied));
-            localStorage.setItem("cart_total",JSON.stringify(total));
-            alert(`Hurray! Coupon Applied. Your new cart total is ${total}  `);
+            alert(`Hurray! Coupon Applied. Your new cart total is (${total})-(${disc})=${bal}  `);
+            localStorage.setItem("cart_total",JSON.stringify(bal));
 
         }
         open_page();
@@ -50,11 +51,12 @@ document.querySelector("#btn2").addEventListener("click",()=>{
             // continue;
         }
         else{
-            total = Math.round(total * 0.6);
+            let disc = Math.round(total * 0.4);
+            let bal=total-disc;
             let coupon_applied = true;
             localStorage.setItem("coupon_applied",JSON.stringify(coupon_applied));
-            localStorage.setItem("cart_total",JSON.stringify(total));
-            alert(`Hurray! Coupon Applied. Your new cart total is ${total}`);
+            alert(`Hurray! Coupon Applied. Your new cart total is (${total})-(${disc})=${bal}  `);
+            localStorage.setItem("cart_total",JSON.stringify(bal));
         }
         open_page();
     }
@@ -72,11 +74,12 @@ document.querySelector("#btn3").addEventListener("click",()=>{
             // continue;
         }
         else{
-            total = total - 300;
+            let disc = 300;
+            let bal=total-disc;
             let coupon_applied = true;
             localStorage.setItem("coupon_applied",JSON.stringify(coupon_applied));
-            localStorage.setItem("cart_total",JSON.stringify(total));
-            alert(`Hurray! Coupon Applied. Your new cart total is ${total}`);
+            alert(`Hurray! Coupon Applied. Your new cart total is (${total})-(${disc})=${bal}  `);
+            localStorage.setItem("cart_total",JSON.stringify(bal));
         }
         open_page();
     }
@@ -94,11 +97,12 @@ document.querySelector("#btn4").addEventListener("click",()=>{
             // continue;
         }
         else{
-            total = Math.round(total * 0.5);
+            let disc = Math.round(total * 0.5);
+            let bal=total-disc;
             let coupon_applied = true;
             localStorage.setItem("coupon_applied",JSON.stringify(coupon_applied));
-            localStorage.setItem("cart_total",JSON.stringify(total));
-            alert(`Hurray! Coupon Applied. Your new cart total is ${total}`);
+            alert(`Hurray! Coupon Applied. Your new cart total is (${total})-(${disc})=${bal}  `);
+            localStorage.setItem("cart_total",JSON.stringify(bal));
         }
         open_page();
     }
@@ -116,11 +120,12 @@ document.querySelector("#btn5").addEventListener("click",()=>{
             // continue;
         }
         else{
-            total = total - 100;
+            let disc = 100;
+            let bal=total-disc;
             let coupon_applied = true;
             localStorage.setItem("coupon_applied",JSON.stringify(coupon_applied));
-            localStorage.setItem("cart_total",JSON.stringify(total));
-            alert(`Hurray! Coupon Applied. Your new cart total is ${total}`);
+            alert(`Hurray! Coupon Applied. Your new cart total is (${total})-(${disc})=${bal}  `);
+            localStorage.setItem("cart_total",JSON.stringify(bal));
         }
         open_page();
     }
@@ -138,11 +143,12 @@ document.querySelector("#btn6").addEventListener("click",()=>{
             // continue;
         }
         else{
-            total = Math.round(total * 0.9);
+            let disc = Math.round(total * 0.1);
+            let bal=total-disc;
             let coupon_applied = true;
             localStorage.setItem("coupon_applied",JSON.stringify(coupon_applied));
-            localStorage.setItem("cart_total",JSON.stringify(total));
-            alert(`Hurray! Coupon Applied. Your new cart total is ${total}`);
+            alert(`Hurray! Coupon Applied. Your new cart total is (${total})-(${disc})=${bal}  `);
+            localStorage.setItem("cart_total",JSON.stringify(bal));
         }
         open_page();
     }
@@ -160,11 +166,12 @@ document.querySelector("#btn12").addEventListener("click",()=>{
             // continue;
         }
         else{
-            total = total * 0.7;
+            let disc = Math.round(total * 0.3);
+            let bal=total-disc;
             let coupon_applied = true;
-            localStorage.setItem("cart_total",JSON.stringify(total));
             localStorage.setItem("coupon_applied",JSON.stringify(coupon_applied));
-            alert(`Hurray! Coupon Applied. Your new cart total is ${total}`);
+            alert(`Hurray! Coupon Applied. Your new cart total is (${total})-(${disc})=${bal}  `);
+            localStorage.setItem("cart_total",JSON.stringify(bal));
         }
         open_page();
     }
