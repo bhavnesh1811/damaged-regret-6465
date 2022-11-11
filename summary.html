@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order Summary</title>
-    <link rel="stylesheet" href="./summary.css" />
+    <link rel="stylesheet" href="./Styles/summary.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -23,15 +23,50 @@
       </div>
     </div>
     <div id="summaryContainer">
+        
       <div id="orderContain">
         <h2>Order Summary</h2>
-        <h3 style="border: 1px solid none; margin-left: 2%">
+        <!-- <h3 style="border: 1px solid none; margin-left: 2%">
           Select Delivery Address
-        </h3>
+        </h3> -->
+         <!-- <div id="container">
+      <div id="addForm">
+        <h1>Add Address:</h1>
+        <form action="" id="form">
+          <input type="text" placeholder="Shipping Name" id="name" />
+          <input type="number" placeholder="Phone Number" id="phoneNumber" />
+          <input type="number" placeholder="Pin Code" id="pinCode" />
+          <input type="text" placeholder="Flat / House No." id="houseNo" />
+          <input type="number" placeholder="Floor No." id="floorNo" />
+          <input type="number" placeholder="Tower No." id="towerNo" />
+          <input
+            type="text"
+            placeholder="Building / Apartment Name"
+            id="building"
+          />
+          <input type="text" placeholder="Address" id="address" />
+          <input type="text" placeholder="Landmark / Area" id="area" />
+          <input type="text" placeholder="City" id="city" />
+          <input type="text" placeholder="State" id="state" />
+          <label for="saveas">Save as:</label>
+          <select name="" id="saveas">
+            <option value="">Select</option>
+            <option value="Home">Home</option>
+            <option value="Work">Work</option>
+            <option value="Other">Other</option>
+          </select>
+          <button>Save Address</button>
+        </form>
+      </div>
+      <div id="savedAddress">
+        <h1>Saved Address</h1>
+        <form action="" id="display"></form>
+      </div>
+    </div> -->
         <div id="buttonBox" style="border: 1px solid none; margin-left: 2%">
           <div id="addressBox">
             <div id="wholeDiv">
-              <div><input type="radio" name="radio" checked /></div>
+              <!-- //<div><input type="radio" name="radio" checked /></div> -->
             </div>
             <!-- <a href="address.html">
             <div id="addAddress">+ Add New Address</div>
@@ -54,7 +89,7 @@
         <h3>Payment Details</h3>
 
         <div id="mrpTotal">
-          <p>MRP TOTAL</p>
+          <p id="mrpTotals">MRP TOTAL</p>
           <span>RS. TOTAL </span>
         </div>
         <div id="productDiscount">
@@ -63,12 +98,13 @@
         </div>
         <hr />
         <div id="total">
-          <h3>Total Amount</h3>
+          <h3 id="totals">Total Amount</h3>
           <h3>Rs. Total</h3>
           <!-- <p></p> -->
         </div>
+        <div id="applycoupon"><a href="coupons.html">Apply Coupon</a></div>
         <hr />
-        <div id="paymentButton"><button onclick="makePayment()">Make Payment</button></div>
+        <div id="paymentButton"><button><a href="./payment.html">Make Payment</a></button></div>
       </div>
     </div>
   </body>

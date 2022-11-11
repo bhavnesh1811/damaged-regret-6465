@@ -11,7 +11,7 @@ totalMrp.innerHTML=null;
 let cartTotal=async()=>{
   let data=await fetch(urlData);
   data=await data.json();
-  console.log("data.length", data.length);
+  //console.log("data.length", data.length);
 
   for(let i=0; i<data.length; i++){
     total=total+data[i].actual_price;
@@ -21,5 +21,15 @@ let cartTotal=async()=>{
   totalAmount.innerHTML=`Total Price :-${total}`;
   totalMrp.innerHTML=`Deal Price :-${deal_total}`;
   //cartcount.innerHTML=data.length;
+  localStorage.setItem("cart_total", JSON.stringify(deal_total))
 }
 cartTotal();
+const paymentproceed=(e)=>{
+    e.preventDefault();
+    setTimeout(() => {
+        alert("Your order is Placed Successfully, Thanks for Shopping!!") ;
+        window.location.href="index.html";
+    }, 2000);
+  
+   
+}

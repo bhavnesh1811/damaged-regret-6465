@@ -1,3 +1,9 @@
+
+    import navbar from "../script/navbar.js";
+    //console.log('navbar:', navbar);
+    let navbar_div=document.getElementById("navbar");
+    navbar_div.innerHTML=navbar();
+
 const url = "https://better-buy-rh4i.onrender.com";
 
 let id;
@@ -166,6 +172,7 @@ const mobiles1169 = async () => {
           "Content-Type": "application/json"
         }
       });
+      data();
     })
     div.append(prod_image, prod_title, prod_deal_price, prod_actual_price, savings, btn)
     best_mobile.append(div);
@@ -249,11 +256,13 @@ const foodGrains1169 = async() => {
 
       await fetch(urlData, {
         method: "POST",
+        
         body: cartData,
         headers: {
           "Content-Type": "application/json"
         }
       });
+      data();
     })
 
     div.append(prod_image, prod_title, prod_deal_price, prod_actual_price, savings,btn)
@@ -261,8 +270,18 @@ const foodGrains1169 = async() => {
   });
 }
 foodGrains1169();
-
-
+let cartcount=document.getElementById("counter");
+const data=async() =>{
+  let urlData = "https://better-buy-rh4i.onrender.com/cartData";
+  let cartData=await fetch(urlData);
+  
+  cartData=await cartData.json();
+  console.log(cartData);
+  cartcount.innerHTML=cartData.length;
+  //appendTop(cartData);
+  
+}
+data();
 
 
 

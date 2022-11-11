@@ -208,3 +208,73 @@ h5 {
   margin-top: 20px;
   height: 30px;
 }
+input {
+  display: block;
+  border: 1px solid grey;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+select {
+  width: 130px;
+  height: 50px;
+  font-size: 18px;
+}
+#addForm {
+  border: 1px solid none;
+  margin-right: 20px;
+}
+button {
+  width: 190px;
+  display: block;
+  /* padding: 10px; */
+  background-color: #008ecc;
+}
+#container {
+  display: flex;
+  height: 1000px;
+  border: 1px solid none;
+  padding-left: 15%;
+}
+#savedAddress {
+  /* border: 1px solid black; */
+  height: auto;
+}
+#container button:nth-child(1),
+button {
+  height: 40px;
+  margin-top: 30px;
+  border-radius: 20px;
+  border: none;
+}
+#display > div div {
+  /* display: flex; */
+  justify-content: space-between;
+  border: 1px solid none;
+}
+#display h3 {
+  border: 1px solid none;
+  margin-right: 25px;
+}
+#display > div {
+  display: flex;
+}
+#display span {
+  display: block;
+  border: 1px solid none;
+  margin-bottom: 5px;
+}
+#innerDiv {
+  display: flex;
+}
+#typeOfAddress {
+  display: flex;
+}
+#wholeDiv {
+  display: flex;
+}
+#wholeDiv > div:nth-child(1) {
+  border: 1px solid none;
+  display: inline-flex;
+  margin-right: 10px;
+  padding-top: 20px;
+}

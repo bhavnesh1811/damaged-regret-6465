@@ -13,12 +13,21 @@ function navbar() {
         </li>
 
         <li style="color: white">
-            <a id="userName" href="./signIn.html" style="font-size: 18px; color: white; text-decoration: none"><i
-                    class="fa fa-user"></i>&nbsp;&nbsp;Sign In/Sign Up</a>
+            <a id="userName" href="./login.html" style="font-size: 18px; color: white; text-decoration: none"><i
+                    class="fa fa-user"></i>&nbsp;&nbsp;Sign In</a>
         </li>
+        <li style="color: white">
+            <a id="userName" href="./signup.html" style="font-size: 18px; color: white; text-decoration: none"><i
+                    class="fa fa-user"></i>&nbsp;&nbsp;Sign Up</a>
+        </li>
+        <li style="color: white">
+        <a id="userName" href="./adminLogin.html" style="font-size: 18px; color: white; text-decoration: none"><i
+                class="fa fa-user"></i>&nbsp;&nbsp;Admin Login</a>
+    </li>
         <li>
-            <a href="newchart.html" style="color: white; text-decoration: none"><i class="fa fa-shopping-cart"
-                    style="font-size: 18px; color: white"></i>&nbsp;&nbsp;Cart</a>
+            <a href="cartpage.html" style="color: white; text-decoration: none"><i class="fa fa-shopping-cart"
+                    style="font-size: 19px; color: white"></i>&nbsp;&nbsp;Cart</a>
+                    <div id="counter"></div>
         </li>
     </ul>
 </div>
