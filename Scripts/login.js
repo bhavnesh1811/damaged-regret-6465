@@ -21,6 +21,10 @@ let verifyUser = document
     let mobile_no = document.getElementById("mbl").value;
     let userOTP = document.getElementById("OTP").value;
 
+    // let user_a = document.getElementById("user_div");
+  // let acc_details = document.getElementById("acc_div");
+  // let user_name = document.getElementById("user_name");
+
     if (mobile_no == "" && userOTP == "") {
       giveErr.style.visibility = "visible";
       giveErr.innerText = "All Fields are Mandatory";
@@ -42,6 +46,9 @@ let verifyUser = document
         localStorage.setItem("user", JSON.stringify(el));
         alert("Login In Successfully!");
         window.location.href = "index.html";
+        // user_a.style.display = "none";
+    // acc_details.style.display = "block";
+    // user_name.innerText = `${firstName}`;
         // window.location.href = "userpage.html";
       }
 

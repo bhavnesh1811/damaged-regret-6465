@@ -9,8 +9,8 @@ import footer from '../Components/footer.js';
 let UserDetails = JSON.parse(localStorage.getItem("userData")) || [];
 // console.log(UserDetails);
 
+let cont = document.getElementById("userInfo");
 let renderDOm = () => {
-  let cont = document.getElementById("userInfo");
   cont.innerHTML = null;
 
   UserDetails.forEach((el) => {
@@ -49,6 +49,14 @@ let editDetails = document.getElementById("edit").addEventListener("click", () =
 });
 
 let logout = document.getElementById("logout").addEventListener("click", () => {
+  // let user_a = document.getElementById("user_div");
+  // let acc_details = document.getElementById("acc_div");
+  // let user_name = document.getElementById("user_name");
+  
+  // user_a.style.display = "none";
+  // acc_details.style.display = "block";
+  // user_name.innerText = `${firstName}`;
+  // window.location.href = "userpage.html";
   window.location.href = "index.html"
-  alert("Logout Successfully");
 })
+logout();
