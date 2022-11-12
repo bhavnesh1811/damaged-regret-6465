@@ -16,11 +16,13 @@ let cartTotal=()=>{
   
 }
 cartTotal();
+let paymentStatus=localStorage.setItem("paymentStatus",JSON.stringify(false));
 const paymentproceed=(e)=>{
     e.preventDefault();
     setTimeout(() => {
         alert("Your order is Placed Successfully, Thanks for Shopping!!") ;
         // localStorage.setItem("cart_total",0);
+        localStorage.setItem("paymentStatus",JSON.stringify(!false));
         localStorage.setItem("total_count",0);
         window.location.href="index.html";
     }, 2000);
