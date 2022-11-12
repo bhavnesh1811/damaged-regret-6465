@@ -1,0 +1,45 @@
+#Add_product_299{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 25px;
+}
+#Add_product_299>input{
+    height: 25px;
+}
+#Add_product_299>#submit_299{
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    font-weight: 900;
+    height: 35px;
+    background-color: grey;
+    color: white;
+}
+#Add_product_299>#submit_299:hover{
+    cursor: pointer;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#navbar_299{
+    display: flex;
+    justify-content: space-around;
+    /* height:50px; */
+    background-color: rgb(62, 71, 71);
+    padding: 30px;
+    text-transform: uppercase;
+}
+
+#navbar_299 a{
+    color: white;
+
+}
+#heading_299{
+    margin-top: 50px;
+    text-align: center;
+}
