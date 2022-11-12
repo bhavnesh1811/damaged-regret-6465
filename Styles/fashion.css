@@ -176,12 +176,15 @@ hr {
 
 /* Container div styling  */
 
-#dataDiv{
+#dataDiv,#dataDiv2{
     width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
+}
+#dataDiv2{
+  margin: 10px 0px 0px 0px;
 }
 #dataDiv>b{
     color: rgb(92, 90, 90);
@@ -199,8 +202,8 @@ hr {
 }
 .items img{
     width: 90%;
-    height: 225px;
-    margin: 0px 0px 0px 12px;
+    height: 250px;
+    margin: 20px 0px 0px 12px;
 }
 
 .items h2{
@@ -214,7 +217,7 @@ font-size: small;
 }
 .items p{
     float: right;
-    margin-right: 160px;
+    margin-right: 10px;
     font-size: 13px;
     margin-top: 2px;
     text-decoration: line-through;
@@ -223,7 +226,7 @@ font-size: small;
 .items button{
     width: 100px;
     height: 25px;
-    margin: 10px 0px 10px 90px;
+    margin: 20px 0px 10px 90px;
     border: none;
     border-radius: 8px;
     background-color: skyblue;
@@ -233,5 +236,24 @@ font-size: small;
 .items button:hover{
     cursor: pointer;
     color: white;
+}
+
+#show_more{
+  width: 200px;
+    height: 50px;
+    margin: 20px 0px 10px 500px;
+    border: none;
+    border-radius: 18px;
+    font-size: large;
+    background-color: skyblue;
+    color: white;
+}
+#show_more:hover{
+  cursor: pointer;
+}
+#loading_gif{
+  width: 100px;
+  margin-left:550px;
+
 }
 
