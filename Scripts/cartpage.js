@@ -106,7 +106,7 @@ deleteBtn.addEventListener("click", () => {
 });
 
 
-div.append(prod_image, prod_title, prod_ratings, prod_deal_price, prod_actual_price, savings, btn,deleteBtn)
+div.append(prod_image, prod_title, prod_deal_price, prod_actual_price, savings, btn,deleteBtn)
 best_seller.append(div);
 })
 }
