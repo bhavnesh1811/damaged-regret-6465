@@ -110,7 +110,7 @@ function navbar() {
         <li>
             <span>Women &nbsp;<i class="fa fa-chevron-down" style="color: grey"></i></span>
             <ul class="submenu">
-                <li><a href="#">Ethnic Wear</a></li>
+                <li><a href="fashion.html">Ethnic Wear</a></li>
                 <li><a href="#">Western Wear</a></li>
                 <li><a href="#">Clothing Accessories</a></li>
                 <li><a href="#">Lingerie & Innerwear</a></li>
