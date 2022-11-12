@@ -11,6 +11,7 @@ const testing=(name,password)=>{
     LSData.forEach(ele => {
         if(name===ele.name && password===ele.password){
             alert("Login Successfull!")
+            window.location.href="AddProduct.html"
             return flag=false
         }
     });
