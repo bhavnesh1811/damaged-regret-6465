@@ -45,6 +45,7 @@ let verifyUser = document
       } else if (mobile_no == el.mbl && userOTP == el.OTP && userOTP == otp) {
         localStorage.setItem("user", JSON.stringify(el));
         alert("Login In Successfully!");
+        localStorage.setItem("flag", JSON.stringify(true));
         window.location.href = "index.html";
         user_a.style.display = "none";
     acc_details.style.display = "block";
