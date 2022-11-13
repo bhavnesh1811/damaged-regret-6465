@@ -27,24 +27,56 @@
             <a href="./index.html">User Side Home Page</a>
         </div>
     </div>
-    <h1 id="heading_299">Add Product Data</h1>
-    <form action="" id="Add_product_299">
-        <input type="text" placeholder="Name" id="name_299">
-        <input type="number" placeholder="Deal Price" id="deal_price_299">
-        <input type="number" placeholder="Actual Price" id="actual_price_299">
-        <input type="url" placeholder="Image URL" id="url" >
-        <select name="" id="select_299">
-            <option>Select Category</option>
-            <option value="/smartphones1169">Smart Phone</option>
-            <option value="/topBestSelling">Best Selling</option>
-            <option value="/foodGrain1169">Food Grain</option>
-            <option value="/Fashion">Fashion</option>
-            <option value="/Electronics">Electronics</option>
-        </select>
-        <input type="submit" value="Submit" id="submit_299">
-    </form>
+    <h1 id="heading_299">Add ,Remove & Delete New Products</h1>
+    <div id="Parenet_div_299">
+        <div>
+            <h1>Delete Product</h1>
+            <input type="number" placeholder="Product id" id="delete_id_299">
+            <select name="" id="delete_select_299">
+                <option>Select Category</option>
+                <option value="/smartphones1169">Smart Phone</option>
+                <option value="/topBestSelling">Best Selling</option>
+                <option value="/foodGrain1169">Food Grain</option>
+                <option value="/Fashion">Fashion</option>
+                <option value="/Electronics">Electronics</option>
+            </select>
+            <button onclick="delete_product_299()" class="submit_299">Delete</button>
+        </div>
+        <div>
+            <h1 id="heading_299">Add Product Data</h1>
+            <form action="" id="Add_product_299">
+                <input type="text" placeholder="Name" id="name_299">
+                <input type="number" placeholder="Deal Price" id="deal_price_299">
+                <input type="number" placeholder="Actual Price" id="actual_price_299">
+                <input type="url" placeholder="Image URL" id="url">
+                <select name="" id="select_299">
+                    <option>Select Category</option>
+                    <option value="/smartphones1169">Smart Phone</option>
+                    <option value="/topBestSelling">Best Selling</option>
+                    <option value="/foodGrain1169">Food Grain</option>
+                    <option value="/Fashion">Fashion</option>
+                    <option value="/Electronics">Electronics</option>
+                </select>
+                <input type="submit" value="Submit" id="submit_299">
+            </form>
+        </div>
+
+        <div>
+            <h1>Update Product</h1>
+            <input type="number" placeholder="Product id" id="update_id_299">
+            <select name="" id="select_cat_299">
+                <option>Select Category</option>
+                <option value="/smartphones1169">Smart Phone</option>
+                <option value="/topBestSelling">Best Selling</option>
+                <option value="/foodGrain1169">Food Grain</option>
+                <option value="/Fashion">Fashion</option>
+                <option value="/Electronics">Electronics</option>
+            </select>
+            <button onclick="update_product_299()" class="submit_299">Update</button>
+        </div>
+    </div>
     
 </body>
 </html>
- <script src="./Scripts/AddProduct.js" type="module"></script>
+ <script src="./Scripts/AddProduct.js" ></script>
 
