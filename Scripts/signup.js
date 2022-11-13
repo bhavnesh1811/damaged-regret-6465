@@ -103,6 +103,7 @@ let addUser = document.getElementById("verify").addEventListener("click", () => 
     
     UserData_arr.push(data);
     localStorage.setItem("userData", JSON.stringify(UserData_arr));
+    localStorage.setItem("flag", JSON.stringify(true));
     window.location.href = "index.html";
       // window.location.href = "login.html";
      firstName = document.getElementById("firstName").value = null;
