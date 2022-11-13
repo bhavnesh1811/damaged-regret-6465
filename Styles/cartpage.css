@@ -574,5 +574,14 @@ h5 {
   height: 50px;
   border-radius: 5px;
   border: 1px solid none;
-  margin-left: 60%;
+  margin-left: 40%;
+  margin-top: 10px;
+}
+
+#orderContain{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:20px;
+  text-align: center;
+  margin: 30px 0px 30px 0px;
 }

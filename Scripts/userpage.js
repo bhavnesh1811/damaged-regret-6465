@@ -9,6 +9,20 @@ import footer from '../Components/footer.js';
 let UserDetails = JSON.parse(localStorage.getItem("userData")) || [];
 // console.log(UserDetails);
 
+let UserData = JSON.parse(localStorage.getItem("userData")) || [];
+// console.log(UserData);
+
+let firstName = UserData[0].firstName
+console.log(firstName);
+
+let user_a = document.getElementById("user_div");
+  let acc_details = document.getElementById("acc_div");
+  let user_name = document.getElementById("user_name");
+
+user_a.style.display = "none";
+    acc_details.style.display = "block";
+    user_name.innerText = `${firstName}`;
+
 let cont = document.getElementById("userInfo");
 let renderDOm = () => {
   cont.innerHTML = null;
@@ -44,19 +58,30 @@ UserDetails.forEach((ele) => {
 });
 
 let editDetails = document.getElementById("edit").addEventListener("click", () => {
-  console.log("123");
   window.location.href = "signup.html";
 });
 
 let logout = document.getElementById("logout").addEventListener("click", () => {
-  // let user_a = document.getElementById("user_div");
-  // let acc_details = document.getElementById("acc_div");
-  // let user_name = document.getElementById("user_name");
-  
-  // user_a.style.display = "none";
-  // acc_details.style.display = "block";
-  // user_name.innerText = `${firstName}`;
-  // window.location.href = "userpage.html";
-  window.location.href = "index.html"
+console.log("123")
+  // UserData = [];
+  // localStorage.setItem("userData", UserData);
+  // UserDetails = [];
+  // localStorage.setItem("userData", UserDetails);
+  window.location.href = "index.html";
+  alert("Logout Successfully")
 })
-logout();
+
+
+
+let cartcount=document.getElementById("counter");
+const dataCount=async() =>{
+  let urlData = "https://better-buy-rh4i.onrender.com/cartData";
+  let cartData=await fetch(urlData);
+  
+  cartData=await cartData.json();
+  console.log(cartData);
+  cartcount.innerHTML=cartData.length;
+  //appendTop(cartData);
+  
+}
+dataCount();

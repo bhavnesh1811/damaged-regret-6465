@@ -6,10 +6,13 @@ body {
 
 #slider1 .sliderone {
     width: 100%;
-    margin-top:50px;
+    margin-top:5px;
     height:250px;
 }
-
+#user_name{
+position: relative;
+top: -15%;
+}
 #banner1169 img {
     margin-top: 20px;
     width: 100%;

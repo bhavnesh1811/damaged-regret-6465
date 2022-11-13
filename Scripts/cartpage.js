@@ -3,6 +3,20 @@ import navbar from "../Components/navbar.js";
 let navbar_div=document.getElementById("navbar");
 navbar_div.innerHTML=navbar();
 
+let UserData = JSON.parse(localStorage.getItem("userData")) || [];
+// console.log(UserData);
+
+let firstName = UserData[0].firstName
+console.log(firstName);
+
+let user_a = document.getElementById("user_div");
+  let acc_details = document.getElementById("acc_div");
+  let user_name = document.getElementById("user_name");
+
+user_a.style.display = "none";
+    acc_details.style.display = "block";
+    user_name.innerText = `${firstName}`;
+
 let total=0;
 let deal_total=0;
 let total_count=JSON.parse(localStorage.getItem("total_count"))||0;

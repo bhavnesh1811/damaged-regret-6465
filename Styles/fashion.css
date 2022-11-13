@@ -7,7 +7,7 @@
 #main {
   width: 100%;
   height: auto;
-  margin: 60px 0px 20px 0px;
+  margin: 10px 0px 20px 0px;
 }
 
 #head {
@@ -24,7 +24,7 @@
   color: rgb(40, 40, 40);
 }
 
-#top,
+#FE_top,
 #bottom {
   width: 97%;
   height: auto;
@@ -222,7 +222,10 @@ font-size: small;
     margin-top: 2px;
     text-decoration: line-through;
 }
-
+#user_name{
+  position: relative;
+  top: -15%;
+  }
 .items button{
     width: 100px;
     height: 25px;
@@ -230,6 +233,7 @@ font-size: small;
     border: none;
     border-radius: 8px;
     background-color: skyblue;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
 

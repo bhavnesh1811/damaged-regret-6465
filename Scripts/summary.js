@@ -18,8 +18,8 @@ let cartTotal=async()=>{
     deal_total=deal_total+data[i].deal_price;
     //count++;
   }
-  totalAmount.innerHTML=`Total Price :-${total}`;
-  totalMrp.innerHTML=`Deal Price :-${deal_total}`;
+  totalAmount.innerHTML=`Total Price :- ₹ ${total} `;
+  totalMrp.innerHTML=`Deal Price :- ₹ ${deal_total}`;
   //cartcount.innerHTML=data.length;
 }
 cartTotal();

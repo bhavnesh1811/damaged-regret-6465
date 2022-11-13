@@ -80,7 +80,7 @@ button {
   width: 40%;
   margin-left: 2%;
   margin-top: 2%;
-  margin-right: 2%;
+  margin-right: 3%;
   font-family: sans-serif;
 }
 #summaryContainer {
@@ -89,11 +89,17 @@ button {
 }
 #icons {
   border: 1px solid none;
+  height: 80px;
   display: flex;
   justify-content: space-between;
-  font-size: 25px;
+  font-size: 3rem;
   vertical-align: middle;
+  margin-bottom: 20px;
   /* margin-top: 2%;*/
+}
+#paymentContain > #icons>span{
+  font-size: 16px;
+ 
 }
 #icons div {
   height: 1px;
@@ -104,6 +110,12 @@ button {
   display: inline-block;
   vertical-align: bottom;
 }
+
+#applycoupon a{
+  text-decoration: none;
+  color: orange;
+  margin-top: 10px;
+}
 #app {
   display: flex;
 }
@@ -113,7 +125,10 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #aeaeae;
+  font-weight: bold;
+  font-size: large;
+ margin: 10px 0px 10px 0px;
+  color: teal;
 }
 #total {
   display: flex;
@@ -149,14 +164,21 @@ h5 {
   padding: 2px;
   border-radius: 5px;
 }
-#paymentButton {
-  display: flex;
-  border: 1px solid none;
-  /* justify-content: flex-end; */
+#paymentButton a {
+  text-decoration: none;
+  color: white;
+  font-weight:bold ;
+  font-size: larger;
 }
+#paymentButton button:hover{
+  cursor: pointer;
+  background-color: green;
+}
+
 #paymentButton button {
   border: 1px solid none;
-  margin-left: 60%;
+  margin-left: 40%;
+ 
 }
 #cartItems p {
   font-size: 18px;
@@ -203,11 +225,7 @@ h5 {
   z-index: 10;
   border: 1px solid none;
 }
-.header img {
-  border: 1px solid none;
-  margin-top: 20px;
-  height: 30px;
-}
+
 input {
   display: block;
   border: 1px solid grey;
@@ -277,4 +295,59 @@ button {
   display: inline-flex;
   margin-right: 10px;
   padding-top: 20px;
+}
+
+#deliver_form{
+  width: 65%;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 12px;
+  padding: 20px 0px 20px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#deliver_form h1{
+  text-align: center;
+}
+#deliver_form input{
+width: 95%;
+height: 40px;
+margin: auto;
+margin-bottom: 20px;
+border-radius: 4px;
+outline: none;
+}
+.submit{
+  border: none;
+  color: black;
+  background-color: skyblue;
+  font-size: larger;
+}
+label{
+  color: rgb(167, 165, 165);
+  margin-left: 15px;
+}
+
+/* --------------------------- */
+
+#brand_logo {
+  width: 120px;
+  height: 70px;
+  padding: 10px 0px 0px 0px;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold; 
+  color: white;
+}
+#logo{
+  width: 70%;
+  height: 30px;
+  margin-left: 36px;
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+#brand_cart_logo{
+  width: 40px;
 }

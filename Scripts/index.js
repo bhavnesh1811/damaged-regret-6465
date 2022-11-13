@@ -8,6 +8,20 @@
     let navbar_div=document.getElementById("navbar");
     navbar_div.innerHTML=navbar();
 
+    let UserData = JSON.parse(localStorage.getItem("userData")) || [];
+// console.log(UserData);
+
+let firstName = UserData[0].firstName
+console.log(firstName);
+
+let user_a = document.getElementById("user_div");
+  let acc_details = document.getElementById("acc_div");
+  let user_name = document.getElementById("user_name");
+
+user_a.style.display = "none";
+    acc_details.style.display = "block";
+    user_name.innerText = `${firstName}`;
+
 const url = "https://better-buy-rh4i.onrender.com";
 
 let id;

@@ -25,7 +25,10 @@
   margin-left: 140px;
   padding: 5px;
 }
-
+#user_name{
+  position: relative;
+  top: -15%;
+  }
 #brand_logo {
   width: 120px;
   height: 80px;
@@ -88,10 +91,14 @@
   display: flex;
   align-items: center;
   display: none;
+  /* border: 1px solid red; */
 }
 #user_logo,
 #acc_img {
   width: 25px;
+}
+#acc_img{
+  margin-top: 10px;
 }
 #user_name {
   margin: 0px 0px 0px 10px;

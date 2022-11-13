@@ -16,55 +16,40 @@
   <body>
     <div class="header">
       <div style="display: flex; margin-left: 70px">
-        <div>
-          <img
-            src="https://www.jiomart.com/msassets/jiomart_logo_beta.svg"
-            alt=""
+        <a id="brand_logo" href="index.html">
+          <p >Better</p>
+          <div id="logo">
+            <img
+            id=" brand_cart_logo"
+            src="https://www.jiomart.com/assets/version1666876029/smartweb/images/icons/cart.svg"
+            alt="Cart Logo"
           />
-        </div>
+          <p >Buy</p>
+          </div>
+        </a>
       </div>
     </div>
     <div id="summaryContainer">
         
       <div id="orderContain">
-        <h2>Order Summary</h2>
-        <!-- <h3 style="border: 1px solid none; margin-left: 2%">
-          Select Delivery Address
-        </h3> -->
-         <!-- <div id="container">
-      <div id="addForm">
-        <h1>Add Address:</h1>
-        <form action="" id="form">
-          <input type="text" placeholder="Shipping Name" id="name" />
-          <input type="number" placeholder="Phone Number" id="phoneNumber" />
-          <input type="number" placeholder="Pin Code" id="pinCode" />
-          <input type="text" placeholder="Flat / House No." id="houseNo" />
-          <input type="number" placeholder="Floor No." id="floorNo" />
-          <input type="number" placeholder="Tower No." id="towerNo" />
-          <input
-            type="text"
-            placeholder="Building / Apartment Name"
-            id="building"
-          />
-          <input type="text" placeholder="Address" id="address" />
-          <input type="text" placeholder="Landmark / Area" id="area" />
-          <input type="text" placeholder="City" id="city" />
-          <input type="text" placeholder="State" id="state" />
-          <label for="saveas">Save as:</label>
-          <select name="" id="saveas">
-            <option value="">Select</option>
-            <option value="Home">Home</option>
-            <option value="Work">Work</option>
-            <option value="Other">Other</option>
-          </select>
-          <button>Save Address</button>
+        <h2 style="margin-top: 10px;">Order Summary</h2>
+
+        
+
+        <form id="deliver_form" action="">
+          <h1>Delivery Address</h1>
+
+          <label class="label" for=""> Name</label>
+          <input class="input" id="name" type="text" placeholder="Please enter your Name"/ class="inpt">
+          <label for="">Phone Number</label>
+          <input class="inpt" id="mbl" type="text" placeholder="Please enter your Mobile number" class="inpt" />
+          <label for="">Address </label>
+          <input class="inpt" id="address1" placeholder="Please Fill you Address" type="text" / class="inpt">
+          <input class="submit" type="submit" value="Submit Address" />
         </form>
-      </div>
-      <div id="savedAddress">
-        <h1>Saved Address</h1>
-        <form action="" id="display"></form>
-      </div>
-    </div> -->
+
+
+        
         <div id="buttonBox" style="border: 1px solid none; margin-left: 2%">
           <div id="addressBox">
             <div id="wholeDiv">
@@ -91,8 +76,8 @@
         <h3>Payment Details</h3>
 
         <div id="mrpTotal">
-          <p id="mrpTotals">MRP TOTAL</p>
-          <span>RS. TOTAL </span>
+          <span id="mrpTotals">MRP TOTAL</span>
+          <span> </span>
         </div>
         <div id="productDiscount">
           <!-- <p>Product Discount</p>
@@ -101,7 +86,7 @@
         <hr />
         <div id="total">
           <h3 id="totals">Total Amount</h3>
-          <h3>Rs. Total</h3>
+          <h3></h3>
           <!-- <p></p> -->
         </div>
         <div id="applycoupon"><a href="coupons.html">Apply Coupon</a></div>
