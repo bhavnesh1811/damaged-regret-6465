@@ -45,7 +45,7 @@ function navbar() {
         src="https://www.jiomart.com/assets/version1666876029/smartweb/images/icons/my-account.svg"
         alt=""
       />
-      <a id="user_name" href="userpage.html">Lokesh</a>
+      <a id="user_name" href="userpage.html"></a>
     </div>
     <a id="admin_a" href="adminLogin0.2.html">Admin Login</a>
     <a id="cart_a" href="cartpage.html"

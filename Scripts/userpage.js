@@ -67,6 +67,7 @@ console.log("123")
   // localStorage.setItem("userData", UserData);
   // UserDetails = [];
   // localStorage.setItem("userData", UserDetails);
+  
   window.location.href = "index.html";
   alert("Logout Successfully")
 })
