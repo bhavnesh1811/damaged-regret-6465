@@ -1,11 +1,9 @@
-#Unit- 3 Construct Week project
+# Better Buy
+## Unit- 3 Construct Week project
 
-#Project:- Better Buy website is an ecommerce webste which allows user to purchase different kind of products as per
-their requirement and needs.
+## Project:- Better Buy website is an ecommerce website inspired from jiomart.com which allows user to purchase different categories of products as per their requirement and needs.
 
-#Team Description- Bhavnesh Arora, Gaurav Sharma, Amir khan, Alok Verma, Lokesh Rautela.(Bug Busters)
-
-# BetterBuy
+## Team Description- Bhavnesh Arora, Gaurav Sharma, Amir khan, Alok Verma, Lokesh Rautela.(Bug Busters)
 
 ## HomePage
 ![Better_Buy_Home](https://user-images.githubusercontent.com/110032728/221776894-3cddaacf-cc04-44a6-b0d2-736dbc1f2499.png)
