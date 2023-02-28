@@ -22,9 +22,8 @@
 
 # Features
  - `Login/Signup`
- - `Sorting & Filtering`
- - `Cart`
- - `Checkout`
+ - `Sorting`
+ - `Filtering`
  - `Crud Operations`
 
 ### :chipmunk: Please feel free for any suggestions, questions or contributions. 
